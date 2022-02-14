@@ -1,0 +1,77 @@
+.quote {
+  padding: 6.5rem 0;
+  @include bg(black);
+  &-container{
+    @include flexbox(center, space-between);
+  }
+  &-arrow{
+    color: $gray-dark-color;
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+  }
+  &-content{
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    @include flexbox(center);
+  }
+  &-icon {
+    @include size(15rem, 15rem);
+    @include flexbox(center, center);
+    border: 3px solid $primary-color;
+    flex-shrink:0;
+  }
+  &-info{
+    padding-left: 6rem;
+  }
+  &-desc {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.6;
+    font-family: $secondary-font;
+    margin-bottom: 2.5rem;
+    font-style: italic;
+    color:white;
+    @include textClamp(3);
+  }
+  &-author {
+    font-family: $third-font;
+    font-size: 2.4rem;
+    position: relative;
+    padding-left: 7rem;
+    color:white;
+    &:before{
+      content: " ";
+      @include absoluteCenter("top");
+      @include size(6rem, 4px);
+      @include bg($primary-color);
+      left: 0;
+    }
+  }
+  @include maxWidth(767px){
+    &-arrow{
+      display:none;
+    }
+    &-content{
+      padding: 0;
+      flex-direction: column;
+    }
+    &-icon {
+      @include size(10rem, 10rem);
+      img {
+        max-width: 50%
+      }
+    }
+    &-info {
+      padding-left: 0;
+      margin-top: 3rem;
+    }
+    &-desc {
+      display: block;
+      font-size: 1.6rem;
+    }
+    &-author {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.intro {
+  background: url(../../images/img-intro.jpg) no-repeat center / cover;
+  min-height: 80rem;
+  padding-top: 14rem;
+  &-info-container {
+    margin-left: auto; 
+    margin-right: 0;
+    width: 33.33%;
+    padding-top: 6.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    border: 1px solid black;
+  }
+  &-info-title {
+    font-size: 3.5rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: left;
+    color: $title-color;
+    margin-bottom: 0.5rem;
+  }
+  &-info-title:last-of-type {
+    margin-bottom: 3rem;
+  }
+  &-info-desc {
+    font-size: 2.4rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: left;
+    color: $text-color;
+    margin-bottom: 8.5rem;
+    line-height: 1.4;
+  }
+  &-more {
+    padding: 1rem 2.5rem;
+    font-size: 2.8rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: left;
+    color: white;
+    margin-bottom: 4.5rem;
+    background: black;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+}

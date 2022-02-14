@@ -1,0 +1,17 @@
+mixin menuLink (title, href = "#")
+  li.header-menu-item
+    a.header-menu-link(href= href)= title
+
+mixin blockBox(caption, title, desc)
+  .block-box
+    h3.block-box-caption= caption
+    h2.block-box-heading= title 
+    if (desc)
+      p.block-box-desc= desc
+
+mixin contributionItem(src, title, iconClass, alt="")
+  .contribution-item
+    img.contribution-image(src= src, alt= alt)
+    .contribution-content
+      i.contribution-icon(class= iconClass)
+      span.contribution-title= title

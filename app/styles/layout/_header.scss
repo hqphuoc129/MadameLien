@@ -1,0 +1,132 @@
+.header{
+  min-height: 100rem;
+  background: linear-gradient(
+    to bottom, 
+    rgba(black, 0.5), 
+    rgba(black,0.5)
+    ),
+     url("../images/img-header-bg.jpg") no-repeat center /cover;
+     color: white;
+    &-logo{
+      @include size(6rem, 6rem);
+    }
+    &-toggle{
+      display:none;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    &-menu-link{
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.25s linear;
+    }
+    &-top{
+      padding-top:30px;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-menu{
+      display: flex;
+    }
+    &-content{
+      padding-top:170px;
+      text-align: left;
+      max-width: 80rem;
+      margin: 0;
+    }
+    &-content-caption{
+      font-size: 6.4rem;
+      font-family:$primary-font;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+    &-content-main{
+      width: 80%;
+      font-size:2.5rem;
+      font-weight:300;
+      padding-bottom:5rem;
+      margin-bottom:5rem;
+      line-height: 1.4;
+    }
+    @media screen  and (max-width : 1023px) {
+      min-height: unset;
+      .header-content {
+        padding-top: 100px;
+      }
+      .header-content-main {
+        font-size: 10rem;
+      }  
+    }
+  @media screen and (min-width :768px){
+    &-menu-item:not(:first-child){
+      margin-left: 5rem;
+    }
+    &-menu-link{
+      color: white;
+      display: inline-block;
+      padding-bottom: 1rem;
+      border-bottom: 4px solid transparent;
+    }
+    &-menu-link:hover{
+      color: $primary-color;
+      border-bottom-color: $primary-color;
+    }
+  }
+  @media screen and (max-width: 767px){
+    .header-content-caption {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .header-content-main {
+      font-size: 5rem;
+      padding-bottom: 3rem;
+      margin-bottom: 3rem;
+    }
+    .header-content{
+      padding-top: 5rem;
+    }
+    .header-menu{
+      position: fixed;
+      right:0;
+      top:0;
+      bottom:0;
+      background-color: white;
+      width: 300px;
+      display: block;
+      padding: 20px 25px;
+      z-index:10;
+      transform: translateX(100%);
+      transition: transform .25s ease-in;
+    }
+    .header-menu.is-expand{
+      transform: translateX(0);
+    }
+    .header-menu-item{
+      margin-bottom: 1rem;
+    }
+    .header-menu-icon{
+      display:block;
+      color: $title-color;
+      padding:  15px;
+      &:hover{
+        color: $primary-color;
+      }
+    }
+    .header-menu-link{
+      color: $title-color;
+      width:100%;
+      padding:  15px;
+      border-radius: 4px;
+      &:hover{
+        color: white;
+        background-color: $primary-color;
+      }
+    }
+    .header-toggle {
+      display: inline-block;
+      align-self: center;
+    }
+  }
+}

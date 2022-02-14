@@ -1,0 +1,94 @@
+.contribution {
+  padding-top: 9.3rem;
+  padding-bottom: 11rem;
+  background-color: white;
+  // &-list{
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   margin-left: -3rem;
+  // }
+  // &-item{
+  //   margin-left: 3rem;
+  //   width: calc(33.33%-3rem);
+  // }
+  // CSS Grid 
+  &-list{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+  }
+  &-item{
+    position:relative;
+    z-index:1;
+    transition: transform 0.25s linear;
+  }
+  &-item:hover{
+    transform: translate(-1rem, -1rem);
+    .contribution-content {
+      opacity: 1;
+      visibility: visible;
+    }
+    &:after{
+      transform: translate(1rem, 1rem);
+    }
+  }
+  &-item:after{
+    content:"";
+    @include absoluteFull();
+    @include bg($primary-color);
+    transition: transform 0.25s linear;
+    z-index: -1;
+  }
+  &-content{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: all 0.25s linear;
+    @include absoluteFull();
+    background: linear-gradient(
+    to bottom, 
+    rgba($primary-color,0.8), 
+    rgba(black,0.5)
+    );
+    z-index: 2;
+    color: white;
+    @include flexbox(center, center, column);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem;
+  }
+  &-icon{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  &-title{
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    @include textClamp;
+  }
+  @include maxWidth(767px){
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    // Flex box 
+    // &-item{
+    //   width: 100%;
+    //   margin-bottom: 2.5rem;
+    // }
+    // CSS Grid
+    &-list{
+      grid-auto-columns: 80%;
+      grid-auto-flow: column;
+      grid-template-columns: unset;
+      grid-row-gap: 2.5rem;
+      overflow-x:auto;
+      padding:1rem;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      @include hideScroll();
+    }
+    &-item{
+      scroll-snap-align: start;
+    }
+  }
+}

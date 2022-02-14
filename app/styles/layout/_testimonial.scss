@@ -1,0 +1,45 @@
+.testimonial {
+  padding: 10rem 0;
+  background-color: $gray-light-color;
+  &-list {
+    @include flexbox(stretch , space-between);
+  }
+  &-item{
+    width: calc(33.33% - 3rem);
+  }
+  &-content{
+    margin-top: 10rem;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid $gray-dark-color;
+    box-shadow: 0 0 3px black;
+    position: relative;
+    padding: 5rem 2rem;
+  }
+  &-media{
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  &-image {
+    @include flexbox(center , center, column);
+    position: absolute;
+    left: 12.5rem;
+    bottom: 15rem;
+    z-index: 2;
+  }
+  &-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    transform: translateY(50%);
+  }
+  &-desc {
+    font-style:normal;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    transform: translateY(20%);
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
