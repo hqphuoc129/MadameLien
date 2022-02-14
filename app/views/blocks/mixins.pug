@@ -15,3 +15,18 @@ mixin contributionItem(src, title, iconClass, alt="")
     .contribution-content
       i.contribution-icon(class= iconClass)
       span.contribution-title= title
+mixin bioinfoItem(title, desc)
+  .bioinfo-content
+    .bioinfo-titlebox
+      h3.bioinfo-title= title
+    .bioinfo-descbox
+      p.bioinfo-desc= desc
+
+mixin mediaquoteItem(src, alt="",href="#")
+  .mediaquote-item
+    a(href= href)
+      img.mediaquote-image(src= src, alt= alt)
+mixin mediaactivitiesItem(src, alt="",href="#")
+  .mediaactivities-item
+    a(href= href)
+      img.mediaactivities-image(src= src, alt= alt)
