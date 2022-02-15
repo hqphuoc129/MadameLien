@@ -38,7 +38,7 @@ mixin modal(title,id, carouselArr)
 				.modal-header
 					button.btn.btn-close(data-bs-dismiss="modal") 
 				.modal-body
-					.carousel.slide(id= `${id}carousel`, data-bs-ride="carousel", data-interval="false")
+					.carousel.slide(id= `${id}carousel`, data-bs-ride="carousel", data-interval="false",data-pause="hover")
 						.carousel-inner
 							each item in carouselArr
 								if (item.title == title)
@@ -49,12 +49,12 @@ mixin modal(title,id, carouselArr)
 									.carousel-item
 										h2.carousel-title= item.title
 										p.carousel-desc= item.desc	
-							button.carousel-control-prev(type="button" data-bs-target=`#${id}carousel` data-bs-slide="prev")
-								span.carousel-control-prev-icon(aria-hidden="true")
-								span.visually-hidden Previous
-							button.carousel-control-next(type="button" data-bs-target=`#${id}carousel` data-bs-slide="next")
-								span.carousel-control-next-icon(aria-hidden="true")
-								span.visually-hidden Next
+					button.carousel-control-prev(type="button" data-bs-target=`#${id}carousel` data-bs-slide="prev")
+						span.carousel-control-prev-icon(aria-hidden="true")
+						span.visually-hidden Previous
+					button.carousel-control-next(type="button" data-bs-target=`#${id}carousel` data-bs-slide="next")
+						span.carousel-control-next-icon(aria-hidden="true")
+						span.visually-hidden Next
 				.modal-footer
 					button.btn.btn-default(type="button") Đọc thêm
 					

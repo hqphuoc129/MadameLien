@@ -1285,3 +1285,19 @@ body {
   .contributiondetails-text5:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
+  .contributiondetails .modal.fade .modal-content {
+    min-height: 30rem;
+    border-radius: 9px;
+    -webkit-filter: drop-shadow(10px 10px 10px black);
+    filter: drop-shadow(10px 10px 10px black);
+    padding: 1.5rem 1rem; }
+  .contributiondetails .modal.fade .modal-body {
+    padding: 0 8rem; }
+    .contributiondetails .modal.fade .modal-body .carousel-inner {
+      margin-top: 2rem; }
+  .contributiondetails .modal.fade .carousel-title {
+    font-size: 26px;
+    margin-bottom: 1.5rem; }
+  .contributiondetails .modal.fade .carousel-desc {
+    font-size: 14px;
+    font-weight: 300; }

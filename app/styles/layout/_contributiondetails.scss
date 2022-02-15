@@ -1,5 +1,5 @@
 .contributiondetails{
-  background-color: $gray-color;
+  background-color:  $gray-color;
   padding: 10rem 0;
   &-content{
     position: relative;
@@ -60,5 +60,26 @@
   &-text5:hover{
     transform: scale(1.1);
   }
-  
+  .modal.fade{
+    .modal-content{
+      min-height: 30rem;
+      border-radius: 9px;
+      filter: drop-shadow(10px 10px 10px black);
+      padding: 1.5rem 1rem;
+    }
+    .modal-body{
+      padding: 0 8rem;
+      .carousel-inner{
+        margin-top: 2rem;
+      }
+    }
+    .carousel-title{
+      font-size: 26px;
+      margin-bottom: 1.5rem;
+    }
+    .carousel-desc{
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
 }
