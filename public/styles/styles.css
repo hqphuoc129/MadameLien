@@ -1301,3 +1301,7 @@ body {
   .contributiondetails .modal.fade .carousel-desc {
     font-size: 14px;
     font-weight: 300; }
+  .contributiondetails .modal.fade .btn.btn-default {
+    background-color: black;
+    color: white;
+    font-size: 15px; }
