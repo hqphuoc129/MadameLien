@@ -57,4 +57,11 @@ mixin modal(title,id, carouselArr)
 						span.visually-hidden Next
 				.modal-footer
 					button.btn.btn-default(type="button") Đọc thêm
-					
+mixin waterinfoItem(title, desc1, desc2, desc3)
+	.waterinfo-content
+		.waterinfo-titlebox
+			h3.waterinfo-title= title
+		.waterinfo-descbox
+			p.waterinfo-desc= desc1
+			p.waterinfo-desc= desc2
+			p.waterinfo-desc= desc3
