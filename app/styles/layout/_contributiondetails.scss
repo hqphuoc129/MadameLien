@@ -1,27 +1,64 @@
 .contributiondetails{
   background-color: $gray-color;
+  padding: 10rem 0;
+  &-content{
+    position: relative;
+  }
   &-image{
+    @include size(80%);
     margin: 0 auto;
-    display: inline-block;
-    position:relative;
+    object-fit: cover;
     z-index: 1;
+    // border: 1px solid black;
   }
-  &-item1{
+  &-text1{
     @include contributeBox;
+    @include flexbox(center, center);
+    top:15%;
+    left: 3%;
+    transition: all 0.2s linear;
   }
-  // &-item2{
-  //   @include contributeBox;
-  // }
-  // &-item3{
-  //   @include contributeBox;
-  // }
-  // &-item4{
-  //   @include contributeBox;
-  // }
-  // &-item5{
-  //   @include contributeBox;
-  // }
-  &-link{
-    color: white;
+  &-text1:hover{
+    transform: scale(1.1);
   }
+  &-text2{
+    @include contributeBox;
+    @include flexbox(center, center);
+    top:13%;
+    left: 35%;
+    transition: all 0.2s linear;
+  }
+  &-text2:hover{
+    transform: scale(1.1);
+  }
+  &-text3{
+    @include contributeBox;
+    @include flexbox(center, center);
+    top:15%;
+    right: 3%;
+  }
+  &-text3:hover{
+    transform: scale(1.1);
+  }
+  &-text4{
+    @include contributeBox;
+    @include flexbox(center, center);
+    bottom: 0%;
+    left: 8%;
+    transition: all 0.2s linear;
+  }
+  &-text4:hover{
+    transform: scale(1.1);
+  }
+  &-text5{
+    @include contributeBox;
+    @include flexbox(center, center);
+    bottom: 0%;
+    right: 15%;
+    transition: all 0.2s linear;
+  }
+  &-text5:hover{
+    transform: scale(1.1);
+  }
+  
 }

@@ -1121,24 +1121,167 @@ body {
       align-self: center; } }
 
 .contributiondetails {
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  padding: 10rem 0; }
+  .contributiondetails-content {
+    position: relative; }
   .contributiondetails-image {
+    width: 80%;
+    height: 80%;
     margin: 0 auto;
-    display: inline-block;
-    position: relative;
+    -o-object-fit: cover;
+    object-fit: cover;
     z-index: 1; }
-  .contributiondetails-item1 {
+  .contributiondetails-text1 {
     position: absolute;
     font-size: 5rem;
     padding: 1rem 2.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 33.33%;
     background-color: black;
     color: white;
     border-radius: 1rem;
     cursor: pointer;
-    z-index: 2; }
-  .contributiondetails-link {
-    color: white; }
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    top: 15%;
+    left: 3%;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+  .contributiondetails-text1:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  .contributiondetails-text2 {
+    position: absolute;
+    font-size: 5rem;
+    padding: 1rem 2.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    top: 13%;
+    left: 35%;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+  .contributiondetails-text2:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  .contributiondetails-text3 {
+    position: absolute;
+    font-size: 5rem;
+    padding: 1rem 2.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    top: 15%;
+    right: 3%; }
+  .contributiondetails-text3:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  .contributiondetails-text4 {
+    position: absolute;
+    font-size: 5rem;
+    padding: 1rem 2.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    bottom: 0%;
+    left: 8%;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+  .contributiondetails-text4:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  .contributiondetails-text5 {
+    position: absolute;
+    font-size: 5rem;
+    padding: 1rem 2.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    bottom: 0%;
+    right: 15%;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+  .contributiondetails-text5:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
