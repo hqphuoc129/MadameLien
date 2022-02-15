@@ -1,32 +1,60 @@
 mixin menuLink (title, href = "#")
-  li.header-menu-item
-    a.header-menu-link(href= href)= title
+	li.header-menu-item
+		a.header-menu-link(href= href)= title
 
 mixin blockBox(caption, title, desc)
-  .block-box
-    h3.block-box-caption= caption
-    h2.block-box-heading= title 
-    if (desc)
-      p.block-box-desc= desc
+	.block-box
+		h3.block-box-caption= caption
+		h2.block-box-heading= title 
+		if (desc)
+			p.block-box-desc= desc
 
 mixin contributionItem(src, title, iconClass, alt="")
-  .contribution-item
-    img.contribution-image(src= src, alt= alt)
-    .contribution-content
-      i.contribution-icon(class= iconClass)
-      span.contribution-title= title
+	.contribution-item
+		img.contribution-image(src= src, alt= alt)
+		.contribution-content
+			i.contribution-icon(class= iconClass)
+			span.contribution-title= title
 mixin bioinfoItem(title, desc)
-  .bioinfo-content
-    .bioinfo-titlebox
-      h3.bioinfo-title= title
-    .bioinfo-descbox
-      p.bioinfo-desc= desc
+	.bioinfo-content
+		.bioinfo-titlebox
+			h3.bioinfo-title= title
+		.bioinfo-descbox
+			p.bioinfo-desc= desc
 
 mixin mediaquoteItem(src, alt="",href="#")
-  .mediaquote-item
-    a(href= href)
-      img.mediaquote-image(src= src, alt= alt)
+	.mediaquote-item
+		a(href= href)
+			img.mediaquote-image(src= src, alt= alt)
 mixin mediaactivitiesItem(src, alt="",href="#")
-  .mediaactivities-item
-    a(href= href)
-      img.mediaactivities-image(src= src, alt= alt)
+	.mediaactivities-item
+		a(href= href)
+			img.mediaactivities-image(src= src, alt= alt)
+
+mixin modal(title,id, carouselArr)
+	.modal.fade(id= id, tabindex="-1",role="dialog",aria-labelledby= id aria-hidden="true")
+		.modal-dialog.modal-dialog-centered
+			.modal-content
+				.modal-header
+					button.btn.btn-close(data-bs-dismiss="modal") 
+				.modal-body
+					.carousel.slide(id= `${id}carousel`, data-bs-ride="carousel", data-interval="false")
+						.carousel-inner
+							each item in carouselArr
+								if (item.title == title)
+									.carousel-item.active
+										h2.carousel-title= item.title
+										p.carousel-desc= item.desc
+								else
+									.carousel-item
+										h2.carousel-title= item.title
+										p.carousel-desc= item.desc	
+							button.carousel-control-prev(type="button" data-bs-target=`#${id}carousel` data-bs-slide="prev")
+								span.carousel-control-prev-icon(aria-hidden="true")
+								span.visually-hidden Previous
+							button.carousel-control-next(type="button" data-bs-target=`#${id}carousel` data-bs-slide="next")
+								span.carousel-control-next-icon(aria-hidden="true")
+								span.visually-hidden Next
+				.modal-footer
+					button.btn.btn-default(type="button") Đọc thêm
+					

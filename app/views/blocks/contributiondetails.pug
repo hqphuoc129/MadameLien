@@ -1,19 +1,21 @@
+
 section.contributiondetails
   .container
     +blockBox("Cống hiến", "Những cống hiến của Madame")
     .contributiondetails-content
       img.contributiondetails-image(src="../images/img-contribution-details.png")
-      a(href="index.html")
-        span.contributiondetails-text1 Nước sạch
-      a(href="#")
-        span.contributiondetails-text2 Thiện nguyện
-      a(href="#")
-        span.contributiondetails-text3 Ngoại giao
-      a(href="#")
-        span.contributiondetails-text4 Giúp đỡ startup
-      a(href="#")
-        span.contributiondetails-text5 Bảo hiểm
-      
+      button.contributiondetails-text1(data-bs-toggle="modal",data-bs-target="#waterModal") Nước sạch
+      button.contributiondetails-text2(data-bs-toggle="modal",data-bs-target="#charityModal") Thiện nguyện
+      button.contributiondetails-text3(data-bs-toggle="modal",data-bs-target="#foreignModal") Ngoại giao
+      button.contributiondetails-text4(data-bs-toggle="modal",data-bs-target="#investModal") Giúp đỡ startup
+      button.contributiondetails-text5(data-bs-toggle="modal",data-bs-target="#insuranceModal") Bảo hiểm
+      +modal("Nước sạch","waterModal",[{"title":"Nước sạch","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Thiện nguyện","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Ngoại giao","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Giúp đỡ startup","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Bảo hiểm","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}])
+      +modal("Thiện nguyện","charityModal",[{"title":"Nước sạch","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Thiện nguyện","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Ngoại giao","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Giúp đỡ startup","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Bảo hiểm","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}])
+      +modal("Ngoại giao","foreignModal",[{"title":"Nước sạch","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Thiện nguyện","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Ngoại giao","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Giúp đỡ startup","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Bảo hiểm","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}])
+      +modal("Giúp đỡ startup","investModal",[{"title":"Nước sạch","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Thiện nguyện","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Ngoại giao","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Giúp đỡ startup","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Bảo hiểm","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}])
+      +modal("Bảo hiểm","insuranceModal",[{"title":"Nước sạch","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Thiện nguyện","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Ngoại giao","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Giúp đỡ startup","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Bảo hiểm","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}])
+//- script.
+//-   var modalArr = [{"title":"Nước sạch","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Thiện nguyện","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Ngoại giao","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Giúp đỡ startup","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},{"title":"Bảo hiểm","desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}]
 
     //- .contributiondetails-item3
     //-   a.contributiondetails-link(href="#") Giúp đỡ startup
