@@ -1,0 +1,27 @@
+.contributiondetails{
+  background-color: $gray-color;
+  &-image{
+    margin: 0 auto;
+    display: inline-block;
+    position:relative;
+    z-index: 1;
+  }
+  &-item1{
+    @include contributeBox;
+  }
+  // &-item2{
+  //   @include contributeBox;
+  // }
+  // &-item3{
+  //   @include contributeBox;
+  // }
+  // &-item4{
+  //   @include contributeBox;
+  // }
+  // &-item5{
+  //   @include contributeBox;
+  // }
+  &-link{
+    color: white;
+  }
+}

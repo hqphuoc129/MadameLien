@@ -1001,3 +1001,144 @@ body {
           display: none; }
       .mediaactivities-item {
         scroll-snap-align: start; } }
+
+.headercontribution {
+  min-height: 100rem;
+  background: url("../../images/img-contribute-bg.jpg") no-repeat center/cover;
+  color: white; }
+  .headercontribution-logo {
+    width: 6rem;
+    height: 6rem; }
+  .headercontribution-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer; }
+  .headercontribution-menu-link {
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear; }
+  .headercontribution-top {
+    padding-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .headercontribution-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .headercontribution-content {
+    padding-top: 170px;
+    text-align: left;
+    max-width: 80rem;
+    margin: 0; }
+  .headercontribution-content-caption {
+    font-size: 6.4rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase; }
+  .headercontribution-content-main {
+    width: 80%;
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+    line-height: 1.4; }
+  @media screen and (max-width: 1023px) {
+    .headercontribution {
+      min-height: unset; }
+      .headercontribution .headercontribution-content {
+        padding-top: 100px; }
+      .headercontribution .headercontribution-content-main {
+        font-size: 10rem; } }
+  @media screen and (min-width: 768px) {
+    .headercontribution-menu-item:not(:first-child) {
+      margin-left: 5rem; }
+    .headercontribution-menu-link {
+      color: white;
+      display: inline-block;
+      padding-bottom: 1rem;
+      border-bottom: 4px solid transparent; }
+    .headercontribution-menu-link:hover {
+      color: #FDC151;
+      border-bottom-color: #FDC151; } }
+  @media screen and (max-width: 767px) {
+    .headercontribution .headercontributioncontent-caption {
+      font-size: 3rem;
+      margin-bottom: 1rem; }
+    .headercontribution .headercontribution-content-main {
+      font-size: 5rem;
+      padding-bottom: 3rem;
+      margin-bottom: 3rem; }
+    .headercontribution .headercontribution-content {
+      padding-top: 5rem; }
+    .headercontribution .headercontribution-menu {
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: white;
+      width: 300px;
+      display: block;
+      padding: 20px 25px;
+      z-index: 10;
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      -webkit-transition: -webkit-transform 0.25s ease-in;
+      transition: -webkit-transform 0.25s ease-in;
+      transition: transform 0.25s ease-in;
+      transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in; }
+    .headercontribution .headercontribution-menu.is-expand {
+      -webkit-transform: translateX(0);
+      transform: translateX(0); }
+    .headercontribution .headercontribution-menu-item {
+      margin-bottom: 1rem; }
+    .headercontribution .headercontribution-menu-icon {
+      display: block;
+      color: #333333;
+      padding: 15px; }
+      .headercontribution .headercontribution-menu-icon:hover {
+        color: #FDC151; }
+    .headercontribution .headercontribution-menu-link {
+      color: #333333;
+      width: 100%;
+      padding: 15px;
+      border-radius: 4px; }
+      .headercontribution .headercontribution-menu-link:hover {
+        color: white;
+        background-color: #FDC151; }
+    .headercontribution .headercontribution-toggle {
+      display: inline-block;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; } }
+
+.contributiondetails {
+  background-color: #f6f6f6; }
+  .contributiondetails-image {
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    z-index: 1; }
+  .contributiondetails-item1 {
+    position: absolute;
+    font-size: 5rem;
+    padding: 1rem 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 33.33%;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    z-index: 2; }
+  .contributiondetails-link {
+    color: white; }
