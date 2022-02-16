@@ -2,7 +2,7 @@
   padding: 6.5rem 0;
   @include bg(black);
   &-container{
-    @include flexbox(center, space-between);
+    outline: none;
   }
   &-arrow{
     color: $gray-dark-color;
@@ -47,6 +47,25 @@
       @include bg($primary-color);
       left: 0;
     }
+  }
+
+  .slick-initialized .slick-slide {
+    display:flex;
+  }
+  .slick-arrow {
+    background-color:transparent;
+    border:0;
+    color: $gray-dark-color;
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    @include absoluteCenter("top");
+  }
+  .slick-prev{
+    left: 0;
+  }
+  .slick-next{
+    right: 0;
   }
   @include maxWidth(767px){
     &-arrow{

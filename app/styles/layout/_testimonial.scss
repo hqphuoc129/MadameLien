@@ -15,10 +15,15 @@
     box-shadow: 0 0 3px black;
     position: relative;
     padding: 5rem 2rem;
+    transition: all 0.3s linear;
   }
   &-media{
     position: relative;
     margin-bottom: 2rem;
+  }
+  &-content:hover{
+    background-color: rgba(black, 0.5);
+    color:white;
   }
   &-image {
     @include flexbox(center , center, column);

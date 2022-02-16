@@ -329,10 +329,15 @@ body {
     -webkit-box-shadow: 0 0 3px black;
     box-shadow: 0 0 3px black;
     position: relative;
-    padding: 5rem 2rem; }
+    padding: 5rem 2rem;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
   .testimonial-media {
     position: relative;
     margin-bottom: 2rem; }
+  .testimonial-content:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; }
   .testimonial-image {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -373,21 +378,7 @@ body {
   padding: 6.5rem 0;
   background-color: black; }
   .quote-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap; }
+    outline: none; }
   .quote-arrow {
     color: #cccccc;
     cursor: pointer;
@@ -467,6 +458,25 @@ body {
       height: 4px;
       background-color: #FDC151;
       left: 0; }
+  .quote .slick-initialized .slick-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .quote .slick-arrow {
+    background-color: transparent;
+    border: 0;
+    color: #cccccc;
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .quote .slick-prev {
+    left: 0; }
+  .quote .slick-next {
+    right: 0; }
   @media screen and (max-width: 767px) {
     .quote-arrow {
       display: none; }
