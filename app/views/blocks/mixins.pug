@@ -45,18 +45,19 @@ mixin modal(title,id, carouselArr)
 									.carousel-item.active
 										h2.carousel-title= item.title
 										p.carousel-desc= item.desc
+										a(href=`${item.link}.html`).btn.btn-default(type="button") Đọc thêm
 								else
 									.carousel-item
 										h2.carousel-title= item.title
-										p.carousel-desc= item.desc	
+										p.carousel-desc= item.desc
+										a(href=`${item.link}.html`).btn.btn-default(type="button") Đọc thêm
 					button.carousel-control-prev(type="button" data-bs-target=`#${id}carousel` data-bs-slide="prev")
 						span.carousel-control-prev-icon(aria-hidden="true")
 						span.visually-hidden Previous
 					button.carousel-control-next(type="button" data-bs-target=`#${id}carousel` data-bs-slide="next")
 						span.carousel-control-next-icon(aria-hidden="true")
 						span.visually-hidden Next
-				.modal-footer
-					button.btn.btn-default(type="button") Đọc thêm
+					
 mixin infoItem(infoname,title, desc1, desc2, desc3)
 	div(class= `${infoname}-content`)
 		div(class= `${infoname}-titlebox`)
