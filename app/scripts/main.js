@@ -1,6 +1,7 @@
-const menuToggle = document.querySelector(".header-toggle");
-const menuHeader = document.querySelector(".header-menu");
-const expandClass = "is-expand";
+const menuToggle = document.querySelectorAll('[class$="-toggle"]')[0];
+//
+const menuHeader = document.querySelectorAll('[class$="-menu"]')[0];
+const expandClass = ".is-expand";
 menuToggle.addEventListener("click", function () {
   menuHeader.classList.add(expandClass);
 });

@@ -45,4 +45,33 @@
     border-radius: 1rem;
     cursor: pointer;
   }
+  @include maxWidth(767px){
+    min-height: 40rem;
+    &-info-container{
+      height: 14rem;
+      width: 100%;
+      padding-top: 0.5rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      position: absolute;
+      bottom: 22%;
+      left: 0;
+    }
+    &-info-title {
+      font-size: 1.8rem;
+    }
+    &-info-title:last-of-type {
+      margin-bottom: 0.5rem;
+    }
+    &-info-desc {
+      @include textClamp(2);
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    &-more {
+      padding: 0.3rem 1rem;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+  }
 }

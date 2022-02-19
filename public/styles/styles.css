@@ -85,15 +85,17 @@ body {
       color: #FDC151;
       border-bottom-color: #FDC151; } }
   @media screen and (max-width: 767px) {
+    .header .header-top {
+      padding-top: 15px; }
     .header .header-content-caption {
-      font-size: 3rem;
+      font-size: 2rem;
       margin-bottom: 1rem; }
     .header .header-content-main {
-      font-size: 5rem;
+      font-size: 1.6rem;
       padding-bottom: 3rem;
       margin-bottom: 3rem; }
     .header .header-content {
-      padding-top: 5rem; }
+      padding: 2rem 1rem 0; }
     .header .header-menu {
       position: fixed;
       right: 0;
@@ -189,6 +191,38 @@ body {
     background: black;
     border-radius: 1rem;
     cursor: pointer; }
+  @media screen and (max-width: 767px) {
+    .intro {
+      min-height: 40rem; }
+      .intro-info-container {
+        height: 14rem;
+        width: 100%;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        position: absolute;
+        bottom: 22%;
+        left: 0; }
+      .intro-info-title {
+        font-size: 1.8rem; }
+      .intro-info-title:last-of-type {
+        margin-bottom: 0.5rem; }
+      .intro-info-desc {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        max-width: 100%;
+        white-space: pre-wrap;
+        word-break: break-word;
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem; }
+      .intro-more {
+        padding: 0.3rem 1rem;
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem; } }
 
 .contribution {
   padding-top: 9.3rem;
@@ -373,6 +407,45 @@ body {
     transform: translateY(20%);
     font-size: 1rem;
     line-height: 1.4; }
+  @media screen and (max-width: 767px) {
+    .testimonial {
+      padding: 3rem 0; }
+      .testimonial-list {
+        margin-top: 2rem;
+        padding: 0; }
+      .testimonial-content {
+        margin-top: 0;
+        padding: 0 1.5rem;
+        width: 70%; }
+      .testimonial-image {
+        position: unset;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7); }
+      .testimonial-item {
+        width: 100%; }
+      .testimonial-media {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+      .testimonial-desc {
+        margin-bottom: 0; } }
 
 .quote {
   padding: 6.5rem 0;
@@ -478,8 +551,6 @@ body {
   .quote .slick-next {
     right: 0; }
   @media screen and (max-width: 767px) {
-    .quote-arrow {
-      display: none; }
     .quote-content {
       padding: 0;
       -webkit-box-orient: vertical;
@@ -487,8 +558,8 @@ body {
       -ms-flex-direction: column;
       flex-direction: column; }
     .quote-icon {
-      width: 10rem;
-      height: 10rem; }
+      width: 6rem;
+      height: 6rem; }
       .quote-icon img {
         max-width: 50%; }
     .quote-info {
@@ -496,9 +567,18 @@ body {
       margin-top: 3rem; }
     .quote-desc {
       display: block;
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      max-width: 100%;
+      white-space: pre-wrap;
+      word-break: break-word; }
     .quote-author {
-      font-size: 2rem; } }
+      font-size: 1.4rem; } }
 
 .wrapper {
   max-width: 1920px;
@@ -544,11 +624,12 @@ body {
     margin-bottom: 10rem; }
   @media screen and (max-width: 767px) {
     .block-box-caption {
-      font-size: 2rem; }
-    .block-boxheading {
-      font-size: 2.5em;
-      margin-bottom: 2.5em;
-      padding: 2.5em; }
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem; }
+    .block-box-heading {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      padding: 1rem; }
     .block-box-desc {
       font-size: 1.4rem;
       margin-bottom: 4rem; } }
@@ -604,7 +685,7 @@ body {
     line-height: 1.4; }
   @media screen and (max-width: 1023px) {
     .headerbio {
-      min-height: unset; }
+      min-height: 40rem; }
       .headerbio .headerbio-content {
         padding-top: 100px; }
       .headerbio .headerbio-content-main {
@@ -621,16 +702,16 @@ body {
       color: #FDC151;
       border-bottom-color: #FDC151; } }
   @media screen and (max-width: 767px) {
-    .headerbio .headerbiocontent-caption {
+    .headerbio-content-caption {
       font-size: 3rem;
       margin-bottom: 1rem; }
-    .headerbio .headerbio-content-main {
+    .headerbio-content-main {
       font-size: 5rem;
       padding-bottom: 3rem;
       margin-bottom: 3rem; }
-    .headerbio .headerbio-content {
+    .headerbio-content {
       padding-top: 5rem; }
-    .headerbio .headerbio-menu {
+    .headerbio-menu {
       position: fixed;
       right: 0;
       top: 0;
@@ -646,26 +727,26 @@ body {
       transition: -webkit-transform 0.25s ease-in;
       transition: transform 0.25s ease-in;
       transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in; }
-    .headerbio .headerbio-menu.is-expand {
+    .headerbio-menu.is-expand {
       -webkit-transform: translateX(0);
       transform: translateX(0); }
-    .headerbio .headerbio-menu-item {
+    .headerbio-menu-item {
       margin-bottom: 1rem; }
-    .headerbio .headerbio-menu-icon {
+    .headerbio-menu-icon {
       display: block;
       color: #333333;
       padding: 15px; }
-      .headerbio .headerbio-menu-icon:hover {
+      .headerbio-menu-icon:hover {
         color: #FDC151; }
-    .headerbio .headerbio-menu-link {
+    .headerbio-menu-link {
       color: #333333;
       width: 100%;
       padding: 15px;
       border-radius: 4px; }
-      .headerbio .headerbio-menu-link:hover {
+      .headerbio-menu-link:hover {
         color: white;
         background-color: #FDC151; }
-    .headerbio .headerbio-toggle {
+    .headerbio-toggle {
       display: inline-block;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -693,6 +774,20 @@ body {
   line-height: 1.6;
   margin: 6rem auto  4rem;
   width: 50%; }
+
+@media screen and (max-width: 767px) {
+  .bioinfo-content {
+    padding: 1.5rem 0; }
+  .bioinfo-titlebox {
+    padding: 1.5rem; }
+  .bioinfo-title {
+    font-size: 3rem; }
+  .bioinfo-desc {
+    font-size: 2.2rem;
+    margin: 2rem auto  0.5rem;
+    width: 100%;
+    padding: 0 2rem;
+    line-height: 1.4; } }
 
 .headerquote {
   min-height: 100rem;
@@ -745,7 +840,7 @@ body {
     line-height: 1.4; }
   @media screen and (max-width: 1023px) {
     .headerquote {
-      min-height: unset; }
+      min-height: 40rem; }
       .headerquote .headerquote-content {
         padding-top: 100px; }
       .headerquote .headerquote-content-main {
@@ -762,16 +857,16 @@ body {
       color: #FDC151;
       border-bottom-color: #FDC151; } }
   @media screen and (max-width: 767px) {
-    .headerquote .headerquotecontent-caption {
+    .headerquote-content-caption {
       font-size: 3rem;
       margin-bottom: 1rem; }
-    .headerquote .headerquote-content-main {
+    .headerquote-content-main {
       font-size: 5rem;
       padding-bottom: 3rem;
       margin-bottom: 3rem; }
-    .headerquote .headerquote-content {
+    .headerquote-content {
       padding-top: 5rem; }
-    .headerquote .headerquote-menu {
+    .headerquote-menu {
       position: fixed;
       right: 0;
       top: 0;
@@ -787,26 +882,26 @@ body {
       transition: -webkit-transform 0.25s ease-in;
       transition: transform 0.25s ease-in;
       transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in; }
-    .headerquote .headerquote-menu.is-expand {
+    .headerquote-menu.is-expand {
       -webkit-transform: translateX(0);
       transform: translateX(0); }
-    .headerquote .headerquote-menu-item {
+    .headerquote-menu-item {
       margin-bottom: 1rem; }
-    .headerquote .headerquote-menu-icon {
+    .headerquote-menu-icon {
       display: block;
       color: #333333;
       padding: 15px; }
-      .headerquote .headerquote-menu-icon:hover {
+      .headerquote-menu-icon:hover {
         color: #FDC151; }
-    .headerquote .headerquote-menu-link {
+    .headerquote-menu-link {
       color: #333333;
       width: 100%;
       padding: 15px;
       border-radius: 4px; }
-      .headerquote .headerquote-menu-link:hover {
+      .headerquote-menu-link:hover {
         color: white;
         background-color: #FDC151; }
-    .headerquote .headerquote-toggle {
+    .headerquote-toggle {
       display: inline-block;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1012,7 +1107,7 @@ body {
     line-height: 1.4; }
   @media screen and (max-width: 1023px) {
     .headermedia {
-      min-height: unset; }
+      min-height: 40rem; }
       .headermedia .headermedia-content {
         padding-top: 100px; }
       .headermedia .headermedia-content-main {
@@ -1029,16 +1124,16 @@ body {
       color: #FDC151;
       border-bottom-color: #FDC151; } }
   @media screen and (max-width: 767px) {
-    .headermedia .headermediacontent-caption {
+    .headermedia-content-caption {
       font-size: 3rem;
       margin-bottom: 1rem; }
-    .headermedia .headermedia-content-main {
+    .headermedia-content-main {
       font-size: 5rem;
       padding-bottom: 3rem;
       margin-bottom: 3rem; }
-    .headermedia .headermedia-content {
+    .headermedia-content {
       padding-top: 5rem; }
-    .headermedia .headermedia-menu {
+    .headermedia-menu {
       position: fixed;
       right: 0;
       top: 0;
@@ -1054,26 +1149,26 @@ body {
       transition: -webkit-transform 0.25s ease-in;
       transition: transform 0.25s ease-in;
       transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in; }
-    .headermedia .headermedia-menu.is-expand {
+    .headermedia-menu.is-expand {
       -webkit-transform: translateX(0);
       transform: translateX(0); }
-    .headermedia .headermedia-menu-item {
+    .headermedia-menu-item {
       margin-bottom: 1rem; }
-    .headermedia .headermedia-menu-icon {
+    .headermedia-menu-icon {
       display: block;
       color: #333333;
       padding: 15px; }
-      .headermedia .headermedia-menu-icon:hover {
+      .headermedia-menu-icon:hover {
         color: #FDC151; }
-    .headermedia .headermedia-menu-link {
+    .headermedia-menu-link {
       color: #333333;
       width: 100%;
       padding: 15px;
       border-radius: 4px; }
-      .headermedia .headermedia-menu-link:hover {
+      .headermedia-menu-link:hover {
         color: white;
         background-color: #FDC151; }
-    .headermedia .headermedia-toggle {
+    .headermedia-toggle {
       display: inline-block;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1279,7 +1374,7 @@ body {
     line-height: 1.4; }
   @media screen and (max-width: 1023px) {
     .headercontribution {
-      min-height: unset; }
+      min-height: 40rem; }
       .headercontribution .headercontribution-content {
         padding-top: 100px; }
       .headercontribution .headercontribution-content-main {
@@ -1296,16 +1391,16 @@ body {
       color: #FDC151;
       border-bottom-color: #FDC151; } }
   @media screen and (max-width: 767px) {
-    .headercontribution .headercontributioncontent-caption {
+    .headercontribution-content-caption {
       font-size: 3rem;
       margin-bottom: 1rem; }
-    .headercontribution .headercontribution-content-main {
+    .headercontribution-content-main {
       font-size: 5rem;
       padding-bottom: 3rem;
       margin-bottom: 3rem; }
-    .headercontribution .headercontribution-content {
+    .headercontribution-content {
       padding-top: 5rem; }
-    .headercontribution .headercontribution-menu {
+    .headercontribution-menu {
       position: fixed;
       right: 0;
       top: 0;
@@ -1321,26 +1416,26 @@ body {
       transition: -webkit-transform 0.25s ease-in;
       transition: transform 0.25s ease-in;
       transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in; }
-    .headercontribution .headercontribution-menu.is-expand {
+    .headercontribution-menu.is-expand {
       -webkit-transform: translateX(0);
       transform: translateX(0); }
-    .headercontribution .headercontribution-menu-item {
+    .headercontribution-menu-item {
       margin-bottom: 1rem; }
-    .headercontribution .headercontribution-menu-icon {
+    .headercontribution-menu-icon {
       display: block;
       color: #333333;
       padding: 15px; }
-      .headercontribution .headercontribution-menu-icon:hover {
+      .headercontribution-menu-icon:hover {
         color: #FDC151; }
-    .headercontribution .headercontribution-menu-link {
+    .headercontribution-menu-link {
       color: #333333;
       width: 100%;
       padding: 15px;
       border-radius: 4px; }
-      .headercontribution .headercontribution-menu-link:hover {
+      .headercontribution-menu-link:hover {
         color: white;
         background-color: #FDC151; }
-    .headercontribution .headercontribution-toggle {
+    .headercontribution-toggle {
       display: inline-block;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1583,7 +1678,7 @@ body {
     line-height: 1.4; }
   @media screen and (max-width: 1023px) {
     .headerwater {
-      min-height: unset; }
+      min-height: 40rem; }
       .headerwater .headerwater-content {
         padding-top: 100px; }
       .headerwater .headerwater-content-main {
@@ -1600,16 +1695,16 @@ body {
       color: #FDC151;
       border-bottom-color: #FDC151; } }
   @media screen and (max-width: 767px) {
-    .headerwater .headerwatercontent-caption {
+    .headerwater-content-caption {
       font-size: 3rem;
       margin-bottom: 1rem; }
-    .headerwater .headerwater-content-main {
+    .headerwater-content-main {
       font-size: 5rem;
       padding-bottom: 3rem;
       margin-bottom: 3rem; }
-    .headerwater .headerwater-content {
+    .headerwater-content {
       padding-top: 5rem; }
-    .headerwater .headerwater-menu {
+    .headerwater-menu {
       position: fixed;
       right: 0;
       top: 0;
@@ -1625,26 +1720,26 @@ body {
       transition: -webkit-transform 0.25s ease-in;
       transition: transform 0.25s ease-in;
       transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in; }
-    .headerwater .headerwater-menu.is-expand {
+    .headerwater-menu.is-expand {
       -webkit-transform: translateX(0);
       transform: translateX(0); }
-    .headerwater .headerwater-menu-item {
+    .headerwater-menu-item {
       margin-bottom: 1rem; }
-    .headerwater .headerwater-menu-icon {
+    .headerwater-menu-icon {
       display: block;
       color: #333333;
       padding: 15px; }
-      .headerwater .headerwater-menu-icon:hover {
+      .headerwater-menu-icon:hover {
         color: #FDC151; }
-    .headerwater .headerwater-menu-link {
+    .headerwater-menu-link {
       color: #333333;
       width: 100%;
       padding: 15px;
       border-radius: 4px; }
-      .headerwater .headerwater-menu-link:hover {
+      .headerwater-menu-link:hover {
         color: white;
         background-color: #FDC151; }
-    .headerwater .headerwater-toggle {
+    .headerwater-toggle {
       display: inline-block;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1722,7 +1817,7 @@ body {
     line-height: 1.4; }
   @media screen and (max-width: 1023px) {
     .headercharity {
-      min-height: unset; }
+      min-height: 40rem; }
       .headercharity .headercharity-content {
         padding-top: 100px; }
       .headercharity .headercharity-content-main {
@@ -1739,16 +1834,16 @@ body {
       color: #FDC151;
       border-bottom-color: #FDC151; } }
   @media screen and (max-width: 767px) {
-    .headercharity .headercharitycontent-caption {
+    .headercharity-content-caption {
       font-size: 3rem;
       margin-bottom: 1rem; }
-    .headercharity .headercharity-content-main {
+    .headercharity-content-main {
       font-size: 5rem;
       padding-bottom: 3rem;
       margin-bottom: 3rem; }
-    .headercharity .headercharity-content {
+    .headercharity-content {
       padding-top: 5rem; }
-    .headercharity .headercharity-menu {
+    .headercharity-menu {
       position: fixed;
       right: 0;
       top: 0;
@@ -1764,26 +1859,26 @@ body {
       transition: -webkit-transform 0.25s ease-in;
       transition: transform 0.25s ease-in;
       transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in; }
-    .headercharity .headercharity-menu.is-expand {
+    .headercharity-menu.is-expand {
       -webkit-transform: translateX(0);
       transform: translateX(0); }
-    .headercharity .headercharity-menu-item {
+    .headercharity-menu-item {
       margin-bottom: 1rem; }
-    .headercharity .headercharity-menu-icon {
+    .headercharity-menu-icon {
       display: block;
       color: #333333;
       padding: 15px; }
-      .headercharity .headercharity-menu-icon:hover {
+      .headercharity-menu-icon:hover {
         color: #FDC151; }
-    .headercharity .headercharity-menu-link {
+    .headercharity-menu-link {
       color: #333333;
       width: 100%;
       padding: 15px;
       border-radius: 4px; }
-      .headercharity .headercharity-menu-link:hover {
+      .headercharity-menu-link:hover {
         color: white;
         background-color: #FDC151; }
-    .headercharity .headercharity-toggle {
+    .headercharity-toggle {
       display: inline-block;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1861,7 +1956,7 @@ body {
     line-height: 1.4; }
   @media screen and (max-width: 1023px) {
     .headerinsurance {
-      min-height: unset; }
+      min-height: 40rem; }
       .headerinsurance .headerinsurance-content {
         padding-top: 100px; }
       .headerinsurance .headerinsurance-content-main {
@@ -1878,16 +1973,16 @@ body {
       color: #FDC151;
       border-bottom-color: #FDC151; } }
   @media screen and (max-width: 767px) {
-    .headerinsurance .headerinsurancecontent-caption {
+    .headerinsurance-content-caption {
       font-size: 3rem;
       margin-bottom: 1rem; }
-    .headerinsurance .headerinsurance-content-main {
+    .headerinsurance-content-main {
       font-size: 5rem;
       padding-bottom: 3rem;
       margin-bottom: 3rem; }
-    .headerinsurance .headerinsurance-content {
+    .headerinsurance-content {
       padding-top: 5rem; }
-    .headerinsurance .headerinsurance-menu {
+    .headerinsurance-menu {
       position: fixed;
       right: 0;
       top: 0;
@@ -1903,26 +1998,26 @@ body {
       transition: -webkit-transform 0.25s ease-in;
       transition: transform 0.25s ease-in;
       transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in; }
-    .headerinsurance .headerinsurance-menu.is-expand {
+    .headerinsurance-menu.is-expand {
       -webkit-transform: translateX(0);
       transform: translateX(0); }
-    .headerinsurance .headerinsurance-menu-item {
+    .headerinsurance-menu-item {
       margin-bottom: 1rem; }
-    .headerinsurance .headerinsurance-menu-icon {
+    .headerinsurance-menu-icon {
       display: block;
       color: #333333;
       padding: 15px; }
-      .headerinsurance .headerinsurance-menu-icon:hover {
+      .headerinsurance-menu-icon:hover {
         color: #FDC151; }
-    .headerinsurance .headerinsurance-menu-link {
+    .headerinsurance-menu-link {
       color: #333333;
       width: 100%;
       padding: 15px;
       border-radius: 4px; }
-      .headerinsurance .headerinsurance-menu-link:hover {
+      .headerinsurance-menu-link:hover {
         color: white;
         background-color: #FDC151; }
-    .headerinsurance .headerinsurance-toggle {
+    .headerinsurance-toggle {
       display: inline-block;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1999,7 +2094,7 @@ body {
     line-height: 1.4; }
   @media screen and (max-width: 1023px) {
     .headerstartup {
-      min-height: unset; }
+      min-height: 40rem; }
       .headerstartup .headerstartup-content {
         padding-top: 100px; }
       .headerstartup .headerstartup-content-main {
@@ -2016,16 +2111,16 @@ body {
       color: #FDC151;
       border-bottom-color: #FDC151; } }
   @media screen and (max-width: 767px) {
-    .headerstartup .headerstartupcontent-caption {
+    .headerstartup-content-caption {
       font-size: 3rem;
       margin-bottom: 1rem; }
-    .headerstartup .headerstartup-content-main {
+    .headerstartup-content-main {
       font-size: 5rem;
       padding-bottom: 3rem;
       margin-bottom: 3rem; }
-    .headerstartup .headerstartup-content {
+    .headerstartup-content {
       padding-top: 5rem; }
-    .headerstartup .headerstartup-menu {
+    .headerstartup-menu {
       position: fixed;
       right: 0;
       top: 0;
@@ -2041,26 +2136,26 @@ body {
       transition: -webkit-transform 0.25s ease-in;
       transition: transform 0.25s ease-in;
       transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in; }
-    .headerstartup .headerstartup-menu.is-expand {
+    .headerstartup-menu.is-expand {
       -webkit-transform: translateX(0);
       transform: translateX(0); }
-    .headerstartup .headerstartup-menu-item {
+    .headerstartup-menu-item {
       margin-bottom: 1rem; }
-    .headerstartup .headerstartup-menu-icon {
+    .headerstartup-menu-icon {
       display: block;
       color: #333333;
       padding: 15px; }
-      .headerstartup .headerstartup-menu-icon:hover {
+      .headerstartup-menu-icon:hover {
         color: #FDC151; }
-    .headerstartup .headerstartup-menu-link {
+    .headerstartup-menu-link {
       color: #333333;
       width: 100%;
       padding: 15px;
       border-radius: 4px; }
-      .headerstartup .headerstartup-menu-link:hover {
+      .headerstartup-menu-link:hover {
         color: white;
         background-color: #FDC151; }
-    .headerstartup .headerstartup-toggle {
+    .headerstartup-toggle {
       display: inline-block;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -2138,7 +2233,7 @@ body {
     line-height: 1.4; }
   @media screen and (max-width: 1023px) {
     .headerforeign {
-      min-height: unset; }
+      min-height: 40rem; }
       .headerforeign .headerforeign-content {
         padding-top: 100px; }
       .headerforeign .headerforeign-content-main {
@@ -2155,16 +2250,16 @@ body {
       color: #FDC151;
       border-bottom-color: #FDC151; } }
   @media screen and (max-width: 767px) {
-    .headerforeign .headerforeigncontent-caption {
+    .headerforeign-content-caption {
       font-size: 3rem;
       margin-bottom: 1rem; }
-    .headerforeign .headerforeign-content-main {
+    .headerforeign-content-main {
       font-size: 5rem;
       padding-bottom: 3rem;
       margin-bottom: 3rem; }
-    .headerforeign .headerforeign-content {
+    .headerforeign-content {
       padding-top: 5rem; }
-    .headerforeign .headerforeign-menu {
+    .headerforeign-menu {
       position: fixed;
       right: 0;
       top: 0;
@@ -2180,26 +2275,26 @@ body {
       transition: -webkit-transform 0.25s ease-in;
       transition: transform 0.25s ease-in;
       transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in; }
-    .headerforeign .headerforeign-menu.is-expand {
+    .headerforeign-menu.is-expand {
       -webkit-transform: translateX(0);
       transform: translateX(0); }
-    .headerforeign .headerforeign-menu-item {
+    .headerforeign-menu-item {
       margin-bottom: 1rem; }
-    .headerforeign .headerforeign-menu-icon {
+    .headerforeign-menu-icon {
       display: block;
       color: #333333;
       padding: 15px; }
-      .headerforeign .headerforeign-menu-icon:hover {
+      .headerforeign-menu-icon:hover {
         color: #FDC151; }
-    .headerforeign .headerforeign-menu-link {
+    .headerforeign-menu-link {
       color: #333333;
       width: 100%;
       padding: 15px;
       border-radius: 4px; }
-      .headerforeign .headerforeign-menu-link:hover {
+      .headerforeign-menu-link:hover {
         color: white;
         background-color: #FDC151; }
-    .headerforeign .headerforeign-toggle {
+    .headerforeign-toggle {
       display: inline-block;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;

@@ -238,7 +238,7 @@
       line-height: 1.4;
     }
     @media screen and (max-width: 1023px) {
-      min-height: unset;
+      min-height: 40rem;
       #{$headerName}-content {
         padding-top: 100px;
       }
@@ -262,19 +262,19 @@
       }
     }
     @media screen and (max-width: 767px) {
-      #{$headerName}content-caption {
+      &-content-caption {
         font-size: 3rem;
         margin-bottom: 1rem;
       }
-     #{$headerName}-content-main {
+      &-content-main {
         font-size: 5rem;
         padding-bottom: 3rem;
         margin-bottom: 3rem;
       }
-     #{$headerName}-content {
+     &-content {
         padding-top: 5rem;
       }
-     #{$headerName}-menu {
+     &-menu {
         position: fixed;
         right: 0;
         top: 0;
@@ -287,13 +287,13 @@
         transform: translateX(100%);
         transition: transform 0.25s ease-in;
       }
-     #{$headerName}-menu.is-expand {
+     &-menu.is-expand {
         transform: translateX(0);
       }
-     #{$headerName}-menu-item {
+    &-menu-item {
         margin-bottom: 1rem;
       }
-     #{$headerName}-menu-icon {
+     &-menu-icon {
         display: block;
         color: $title-color;
         padding: 15px;
@@ -301,7 +301,7 @@
           color: $primary-color;
         }
       }
-     #{$headerName}-menu-link {
+     &-menu-link {
         color: $title-color;
         width: 100%;
         padding: 15px;
@@ -311,7 +311,7 @@
           background-color: $primary-color;
         }
       }
-     #{$headerName}-toggle {
+     &-toggle {
         display: inline-block;
         align-self: center;
       }

@@ -47,4 +47,31 @@
     font-size: 1rem;
     line-height: 1.4;
   }
+  @include maxWidth(767px){
+    padding: 3rem 0;
+    &-list{
+      margin-top:2rem;
+      padding: 0;
+    }
+    &-content{
+      margin-top: 0;
+      padding: 0 1.5rem;
+      width: 70%;
+    }
+    &-image{
+      position: unset;
+      @include flexbox(center, center);
+      flex-shrink:0;
+      transform: scale(0.7);
+    }
+    &-item{
+      width: 100%;
+    }
+    &-media{
+      display: flex;
+    }
+    &-desc{
+      margin-bottom:0;
+    }
+  }
 }

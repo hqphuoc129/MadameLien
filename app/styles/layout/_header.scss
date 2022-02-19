@@ -75,17 +75,20 @@
     }
   }
   @media screen and (max-width: 767px){
+    .header-top{
+      padding-top: 15px;
+    }
     .header-content-caption {
-      font-size: 3rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
     .header-content-main {
-      font-size: 5rem;
+      font-size: 1.6rem;
       padding-bottom: 3rem;
       margin-bottom: 3rem;
     }
     .header-content{
-      padding-top: 5rem;
+      padding: 2rem 1rem 0;
     }
     .header-menu{
       position: fixed;
