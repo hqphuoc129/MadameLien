@@ -47,16 +47,13 @@
   }
   @include maxWidth(767px){
     min-height: 40rem;
-    postition: relative;
+    padding-top:25rem;
     &-info-container{
       height: 14rem;
       width: 100%;
       padding-top: 0.5rem;
       padding-left: 0.5rem;
       padding-right: 0.5rem;
-      position: absolute;
-      bottom: 15%;
-      left: 0;
     }
     &-info-title {
       font-size: 1.8rem;

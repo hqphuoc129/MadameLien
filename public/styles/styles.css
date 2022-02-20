@@ -194,16 +194,13 @@ body {
   @media screen and (max-width: 767px) {
     .intro {
       min-height: 40rem;
-      postition: relative; }
+      padding-top: 25rem; }
       .intro-info-container {
         height: 14rem;
         width: 100%;
         padding-top: 0.5rem;
         padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        position: absolute;
-        bottom: 15%;
-        left: 0; }
+        padding-right: 0.5rem; }
       .intro-info-title {
         font-size: 1.8rem; }
       .intro-info-title:last-of-type {
