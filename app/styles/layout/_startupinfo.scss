@@ -19,4 +19,17 @@
     margin: 6rem auto  4rem;
     width: 80%;
   }
+  @include  maxWidth(767px){
+    &-titlebox{
+      padding:1.5rem;
+    }
+    &-title{
+      font-size: 3rem;
+    }
+    &-desc{
+      font-size: 2.2rem;
+      margin: 2rem auto 0.5rem;
+      line-height: 1.4;
+    }
+  }
 }

@@ -87,4 +87,32 @@
       font-size: 15px;
     }
   }
+  @include maxWidth(767px){
+    padding: 3rem 0;
+    &-text1{
+      font-size: 1.2em;
+      padding: 0.5rem 1rem;
+    }
+    &-text2{
+      font-size: 1.2em;
+      padding: 0.5rem 1rem;
+      left: 38%;
+    }
+    &-text3{
+      font-size: 1.2em;
+      padding: 0.5rem 1rem;
+    }
+    &-text4{
+      font-size: 1.2em;
+      padding: 0.5rem 1rem;
+      left: 11%;
+    }
+    &-text5{
+      font-size: 1.2em;
+      padding: 0.5rem 1rem;
+    }
+    // .image-box {
+      
+    // }
+  }
 }

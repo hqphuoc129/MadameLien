@@ -23,7 +23,7 @@ zoomBtn.forEach(function(btn, index){
 })
 
 function currentImageDisplay(position){
-    imageBox.style.background = `url(../images/img-mediaquote${currentImageIdx}.png) center/cover no-repeat`;
+    imageBox.style.background = `url(../images/img-mediaquote${currentImageIdx}.png) center/ contain no-repeat`;
 }
 
 prevBtn.addEventListener('click', function(){
