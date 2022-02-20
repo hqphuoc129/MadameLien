@@ -1,9 +1,11 @@
 extends layout/layout
 
 block vars
-	-title = 'Madame Lien'
+	-title = 'Main'
 	-bodyClass = 'home-page'
 
+block header
+	include blocks/header
 block container
 	include blocks/intro
 	include blocks/contribution

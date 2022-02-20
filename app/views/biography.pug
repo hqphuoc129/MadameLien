@@ -1,6 +1,10 @@
 extends layout/layout
 
+block vars
+	-title = 'Biography'
+	-bodyClass = 'biography-page'
+
 block  header
-  include blocks/headerbio
+	include blocks/headerbio
 block container
-  include blocks/bioinfo
+	include blocks/bioinfo

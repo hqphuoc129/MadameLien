@@ -1,12 +1,21 @@
 const menuToggle = document.querySelectorAll('[class$="-toggle"]')[0];
-//
 const menuHeader = document.querySelectorAll('[class$="-menu"]')[0];
-const expandClass = ".is-expand";
+const originHeader  = document.querySelector(".headerbio-menu");
+const expandClass = "is-expand";
+// get class name form querySelector
+const menuToggleClass = menuToggle.className;
+//regex pattern match class name between " " and  -toggle
+const menuToggleClassName = menuToggleClass.match(/\S+-toggle/g)[0];
+
+console.log(menuToggleClassName);
+
+// console.log(menuToggleClass);
 menuToggle.addEventListener("click", function () {
   menuHeader.classList.add(expandClass);
+  console.log("clicked");
 });
 window.addEventListener("click", function (e) {
-  if (!menuHeader.contains(e.target) && !e.target.matches(".header-toggle")) {
+  if (!menuHeader.contains(e.target) && !e.target.matches(`.${menuToggleClassName}`)) {
     menuHeader.classList.remove(expandClass);
   }
 });
