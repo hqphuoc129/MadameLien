@@ -26,9 +26,8 @@
     color:white;
   }
   &-image {
-    @include flexbox(center , center, column);
     position: absolute;
-    left: 12.5rem;
+    left: 15em;
     bottom: 15rem;
     z-index: 2;
   }
@@ -52,23 +51,24 @@
     &-list{
       margin-top:2rem;
       padding: 0;
+      display:block;
     }
     &-content{
       margin-top: 0;
       padding: 0 1.5rem;
       width: 70%;
     }
+    &-media{
+      display: flex;
+    }
+    &-item{
+      width:100%;
+    }
     &-image{
       position: unset;
       @include flexbox(center, center);
       flex-shrink:0;
       transform: scale(0.7);
-    }
-    &-item{
-      width: 100%;
-    }
-    &-media{
-      display: flex;
     }
     &-desc{
       margin-bottom:0;
