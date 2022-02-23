@@ -62,7 +62,7 @@ mixin modal(title,id, carouselArr)
 						span.carousel-control-next-icon(aria-hidden="true")
 						span.visually-hidden Next
 					
-mixin infoItem(infoname,title, desc1, desc2, desc3)
+mixin infoItem(infoname,title, desc1, desc2, desc3,desc4,desc5,desc6,desc7)
 	div(class= `${infoname}-content`)
 		div(class= `${infoname}-titlebox`)
 			h3(class= `${infoname}-title`)= title
@@ -70,3 +70,11 @@ mixin infoItem(infoname,title, desc1, desc2, desc3)
 			p(class= `${infoname}-desc`)= desc1
 			p(class= `${infoname}-desc`)= desc2
 			p(class= `${infoname}-desc`)= desc3
+			if (desc4)
+				p(class= `${infoname}-desc`)= desc4
+			if (desc5)
+				p(class= `${infoname}-desc`)= desc5
+			if (desc6)
+				p(class= `${infoname}-desc`)= desc6
+			if (desc7)
+				p(class= `${infoname}-desc`)= desc7
