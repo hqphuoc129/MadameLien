@@ -1,18 +1,25 @@
 section.mediaquote
   .container
-    .mediaquote-list
-      +mediaquoteItem("../images/img-mediaquote1.png")
-      +mediaquoteItem("../images/img-mediaquote2.png")
-      +mediaquoteItem("../images/img-mediaquote3.png")
-      +mediaquoteItem("../images/img-mediaquote4.png")
-      +mediaquoteItem("../images/img-mediaquote5.png")
-      +mediaquoteItem("../images/img-mediaquote6.png")
-      +mediaquoteItem("../images/img-mediaquote7.png")
-      +mediaquoteItem("../images/img-mediaquote8.png")
-      +mediaquoteItem("../images/img-mediaquote9.png")
-
+    .mediaquote-list(id="mediaquote-list")
+      //- +mediaquoteItem("../images/img-mediaquote1.png")
+      //- +mediaquoteItem("../images/img-mediaquote2.png")
+      //- +mediaquoteItem("../images/img-mediaquote3.png")
+      //- +mediaquoteItem("../images/img-mediaquote4.png")
+      //- +mediaquoteItem("../images/img-mediaquote5.png")
+      //- +mediaquoteItem("../images/img-mediaquote6.png")
+      //- +mediaquoteItem("../images/img-mediaquote7.png")
+      //- +mediaquoteItem("../images/img-mediaquote8.png")
+      //- +mediaquoteItem("../images/img-mediaquote9.png")
+    .content__paging
+      ul
+        li.btn-prev.btn-active.fas.fa-angle-left
+        div(id="number-page").number-page
+          //- li(class="active")
+          //-   a(href="#") 1
+        li.btn-next.fas.fa-angle-right
 .image-view 
 .image-box
   #prev-btn
   #next-btn
-script(src="../../scripts/scriptquote.js" async defer)
+//- script(src="../../scripts/scriptquote.js" async defer)
+script(src="../../scripts/paging.js" async defer)

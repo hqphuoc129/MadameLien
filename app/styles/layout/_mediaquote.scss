@@ -33,7 +33,7 @@
       scroll-snap-align: start;
     }
   }
-  .mediaquote-item{
+  .mediaquote-item {
     position: relative;
   }
 
@@ -78,6 +78,52 @@
     cursor: zoom-in;
     transform: scale(1.1);
   }
+  .content__paging {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content__paging .number-page {
+    display: flex;
+  }
+
+  .content__paging ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content__paging li {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  .content__paging ul li a {
+    color: black;
+  }
+
+  .btn-active {
+    color: #c6c9cc;
+    border: solid 1px #c6c9cc !important;
+  }
+
+  .content__paging .active {
+    background: #ff6e06;
+    border: 1px solid #ff6e06;
+  }
+
+  .content__paging .active a {
+    color: white;
+  }
+}
+ul li {
+  list-style: none;
 }
 .image-view {
   position: fixed;

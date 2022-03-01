@@ -1,1 +1,10 @@
-@include headerView('.headerinsurance', '../../images/img-headerinsurance-bg.jpg',black, white, 0.4, 0, 12%, 0%);
+@include headerView(
+  ".headerinsurance",
+  "../../images/img-headerinsurance-bg.jpg",
+  black,
+  white,
+  0.4,
+  0,
+  12%,
+  0%
+);

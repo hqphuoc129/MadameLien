@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta property="og:title" content="Madame Lien">
-    <meta property="og:image" content="https://pixabay.com/images/id-7025731/">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2022/02/21/04/26/shark-connection-7025731_960_720.jpg">
     <title>Site</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -32,61 +32,13 @@
       </header>
       <section class="mediaquote">
         <div class="container">
-          <div class="mediaquote-list">
-            <div class="mediaquote-item"><img class="mediaquote-image" src="../images/img-mediaquote1.png" alt=""/>
-              <div class="content">
-                <div class="zoom-text">Nhấn vào </div>
-                <h2></h2>
-              </div>
-            </div>
-            <div class="mediaquote-item"><img class="mediaquote-image" src="../images/img-mediaquote2.png" alt=""/>
-              <div class="content">
-                <div class="zoom-text">Nhấn vào </div>
-                <h2></h2>
-              </div>
-            </div>
-            <div class="mediaquote-item"><img class="mediaquote-image" src="../images/img-mediaquote3.png" alt=""/>
-              <div class="content">
-                <div class="zoom-text">Nhấn vào </div>
-                <h2></h2>
-              </div>
-            </div>
-            <div class="mediaquote-item"><img class="mediaquote-image" src="../images/img-mediaquote4.png" alt=""/>
-              <div class="content">
-                <div class="zoom-text">Nhấn vào </div>
-                <h2></h2>
-              </div>
-            </div>
-            <div class="mediaquote-item"><img class="mediaquote-image" src="../images/img-mediaquote5.png" alt=""/>
-              <div class="content">
-                <div class="zoom-text">Nhấn vào </div>
-                <h2></h2>
-              </div>
-            </div>
-            <div class="mediaquote-item"><img class="mediaquote-image" src="../images/img-mediaquote6.png" alt=""/>
-              <div class="content">
-                <div class="zoom-text">Nhấn vào </div>
-                <h2></h2>
-              </div>
-            </div>
-            <div class="mediaquote-item"><img class="mediaquote-image" src="../images/img-mediaquote7.png" alt=""/>
-              <div class="content">
-                <div class="zoom-text">Nhấn vào </div>
-                <h2></h2>
-              </div>
-            </div>
-            <div class="mediaquote-item"><img class="mediaquote-image" src="../images/img-mediaquote8.png" alt=""/>
-              <div class="content">
-                <div class="zoom-text">Nhấn vào </div>
-                <h2></h2>
-              </div>
-            </div>
-            <div class="mediaquote-item"><img class="mediaquote-image" src="../images/img-mediaquote9.png" alt=""/>
-              <div class="content">
-                <div class="zoom-text">Nhấn vào </div>
-                <h2></h2>
-              </div>
-            </div>
+          <div class="mediaquote-list" id="mediaquote-list"></div>
+          <div class="content__paging">
+            <ul>
+              <li class="btn-prev btn-active fas fa-angle-left"></li>
+              <div class="number-page" id="number-page"></div>
+              <li class="btn-next fas fa-angle-right"></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -95,7 +47,20 @@
         <div id="prev-btn"></div>
         <div id="next-btn"></div>
       </div>
-      <script src="../../scripts/scriptquote.js" async defer></script>
+      <script src="../../scripts/paging.js" async defer></script>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-column"><a class="footer-heading" href="index.html">Madame Liên</a>
+              <p class="footer-desc">Đây là trang web giới thiệu về Madame Liên và những cống hiến thành tựu của Madame Liên.</p>
+              <div class="footer-social"><span>Theo dõi thêm thông tin: </span>
+                <div class="footer-social-list"><a class="footer-social-icon" href="https://www.facebook.com/SharkLien"><i class="fab fa-facebook"></i></a><a class="footer-social-icon" href="https://www.youtube.com/channel/UCTyHeMwx1x5u5EirSvqLtcw"><i class="fab fa-youtube"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">&copy; 2022 </div>
+        </div>
+      </footer>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

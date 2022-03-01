@@ -1,6 +1,6 @@
 const menuToggle = document.querySelectorAll('[class$="-toggle"]')[0];
 const menuHeader = document.querySelectorAll('[class$="-menu"]')[0];
-const originHeader  = document.querySelector(".headerbio-menu");
+const originHeader = document.querySelector(".headerbio-menu");
 const expandClass = "is-expand";
 // get class name form querySelector
 const menuToggleClass = menuToggle.className;
@@ -15,7 +15,10 @@ menuToggle.addEventListener("click", function () {
   console.log("clicked");
 });
 window.addEventListener("click", function (e) {
-  if (!menuHeader.contains(e.target) && !e.target.matches(`.${menuToggleClassName}`)) {
+  if (
+    !menuHeader.contains(e.target) &&
+    !e.target.matches(`.${menuToggleClassName}`)
+  ) {
     menuHeader.classList.remove(expandClass);
   }
 });
@@ -28,8 +31,8 @@ $(document).ready(function () {
     infinite: true,
     speed: 500,
     fade: true,
-    slide: 'div',
-    cssEase: 'linear',
+    slide: "div",
+    cssEase: "linear",
     prevArrow:
       "<button type='button' class='slick-prev pull-left'><i class='fal fa-angle-left' aria-hidden='true'></i></button>",
     nextArrow:
