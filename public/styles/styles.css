@@ -436,7 +436,7 @@ body {
         margin-top: 0;
         padding: 0 1.5rem;
         width: 95%;
-        height: 30rem; }
+        height: 35rem; }
       .testimonial-item {
         width: 100%; }
       .testimonial-desc {
@@ -1393,6 +1393,53 @@ ul li {
     cursor: zoom-in;
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
+  .mediaactivities .content__paging {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .mediaactivities .content__paging .number-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .mediaactivities .content__paging ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .mediaactivities .content__paging li {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer; }
+  .mediaactivities .content__paging ul li a {
+    color: black; }
+  .mediaactivities .btn-active {
+    color: #c6c9cc;
+    border: solid 1px #c6c9cc !important; }
+  .mediaactivities .content__paging .active {
+    background: #ff6e06;
+    border: 1px solid #ff6e06; }
+  .mediaactivities .content__paging .active a {
+    color: white; }
 
 .image-view {
   position: fixed;

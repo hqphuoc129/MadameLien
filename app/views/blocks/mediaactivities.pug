@@ -1,18 +1,24 @@
 section.mediaactivities
   .container
-    .mediaactivities-list
-      +mediaactivitiesItem("../images/img-mediaactivities1.png")
-      +mediaactivitiesItem("../images/img-mediaactivities2.png")
-      +mediaactivitiesItem("../images/img-mediaactivities3.png")
-      +mediaactivitiesItem("../images/img-mediaactivities4.png")
-      +mediaactivitiesItem("../images/img-mediaactivities5.png")
-      +mediaactivitiesItem("../images/img-mediaactivities6.png")
-      +mediaactivitiesItem("../images/img-mediaactivities7.png")
-      +mediaactivitiesItem("../images/img-mediaactivities8.png")
-      +mediaactivitiesItem("../images/img-mediaactivities9.png")
-
+    .mediaactivities-list(id="mediaactivities-list")
+      //- +mediaactivitiesItem("../images/img-mediaactivities1.png")
+      //- +mediaactivitiesItem("../images/img-mediaactivities2.png")
+      //- +mediaactivitiesItem("../images/img-mediaactivities3.png")
+      //- +mediaactivitiesItem("../images/img-mediaactivities4.png")
+      //- +mediaactivitiesItem("../images/img-mediaactivities5.png")
+      //- +mediaactivitiesItem("../images/img-mediaactivities6.png")
+      //- +mediaactivitiesItem("../images/img-mediaactivities7.png")
+      //- +mediaactivitiesItem("../images/img-mediaactivities8.png")
+      //- +mediaactivitiesItem("../images/img-mediaactivities9.png")
+    .content__paging
+      ul
+        li.btn-prev.btn-active.fas.fa-angle-left
+        div(id="number-page").number-page
+          //- li(class="active")
+          //-   a(href="#") 1
+        li.btn-next.fas.fa-angle-right
 .image-view 
 .image-box
   #prev-btn
   #next-btn
-script(src="../../scripts/scriptmedia.js" async defer)
+script(src="../../scripts/pagingactivities.js" async defer)
